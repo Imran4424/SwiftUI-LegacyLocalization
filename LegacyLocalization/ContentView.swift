@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var name: LocalizedStringResource = "Dear"
+    @State private var name: String = "Dear"
     @State private var loveCounter = 3000
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack {
                 Spacer()
                 
@@ -27,7 +27,7 @@ struct ContentView: View {
                     Text("I love you")
                     Text("\(loveCounter)")
                         .bold()
-                        .foregroundStyle(Color.red)
+                        .foregroundColor(Color.red)
                 }
                 
                 Spacer()
