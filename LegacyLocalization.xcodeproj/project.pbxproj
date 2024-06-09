@@ -11,6 +11,7 @@
 		1D4F9E712C15884600613850 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4F9E702C15884600613850 /* ContentView.swift */; };
 		1D4F9E732C15884600613850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4F9E722C15884600613850 /* Assets.xcassets */; };
 		1D4F9E762C15884600613850 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4F9E752C15884600613850 /* Preview Assets.xcassets */; };
+		1D4F9E882C15A80E00613850 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D4F9E862C15A80E00613850 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		1D4F9E702C15884600613850 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1D4F9E722C15884600613850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D4F9E752C15884600613850 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1D4F9E872C15A80E00613850 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1D4F9E892C15AB1F00613850 /* bn-BD */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "bn-BD"; path = "bn-BD.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,7 @@
 			children = (
 				1D4F9E6E2C15884600613850 /* LegacyLocalizationApp.swift */,
 				1D4F9E702C15884600613850 /* ContentView.swift */,
+				1D4F9E7C2C15A52D00613850 /* Localization */,
 				1D4F9E722C15884600613850 /* Assets.xcassets */,
 				1D4F9E742C15884600613850 /* Preview Content */,
 			);
@@ -65,6 +69,14 @@
 				1D4F9E752C15884600613850 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1D4F9E7C2C15A52D00613850 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				1D4F9E862C15A80E00613850 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +121,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"bn-BD",
 			);
 			mainGroup = 1D4F9E622C15884500613850;
 			productRefGroup = 1D4F9E6C2C15884500613850 /* Products */;
@@ -126,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D4F9E762C15884600613850 /* Preview Assets.xcassets in Resources */,
+				1D4F9E882C15A80E00613850 /* Localizable.strings in Resources */,
 				1D4F9E732C15884600613850 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,12 +158,25 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		1D4F9E862C15A80E00613850 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D4F9E872C15A80E00613850 /* en */,
+				1D4F9E892C15AB1F00613850 /* bn-BD */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		1D4F9E772C15884600613850 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -213,6 +240,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

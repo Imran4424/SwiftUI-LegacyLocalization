@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  LegacyLocalization
+
+  Created by Shah Md Imran Hossain on 9/6/24.
+  
+*/
+
+"Dear" = "Dear"
+"Do you know %@?" = "Do you know %@?"
+"I love you" = "I love you"
+"Reset" = "Reset"
+"Random" = "Random"
