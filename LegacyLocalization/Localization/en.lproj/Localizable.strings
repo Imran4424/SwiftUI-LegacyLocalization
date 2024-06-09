@@ -6,8 +6,8 @@
   
 */
 
-"Dear" = "Dear"
-"Do you know %@?" = "Do you know %@?"
-"I love you" = "I love you"
-"Reset" = "Reset"
-"Random" = "Random"
+"Dear" = "Dear";
+"Do you know %@?" = "Do you know %@?";
+"I love you" = "I love you";
+"Reset" = "Reset";
+"Random" = "Random";

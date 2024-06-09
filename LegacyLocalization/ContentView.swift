@@ -6,17 +6,31 @@
 //
 
 import SwiftUI
+import UIKit
+
+extension String {
+    var localizedString: String {
+        return NSLocalizedString(self, comment: "")
+    }
+    
+    func localizedString(argument: String) -> String {
+        let localizedString = NSLocalizedString(self, comment: "")
+        return String(format: localizedString, argument)
+    }
+}
 
 struct ContentView: View {
     @State private var name: String = "Dear"
     @State private var loveCounter = 3000
+    
+    let localizedString = NSLocalizedString("Do you know %@?", comment: "A general question")
     
     var body: some View {
         NavigationView {
             VStack {
                 Spacer()
                 
-                Text("Do you know \(name)?")
+                Text("Do you know %@?".localizedString(argument: name.localizedString))
                     .font(.title)
                 
                 Spacer()
